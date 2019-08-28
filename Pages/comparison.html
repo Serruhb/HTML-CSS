@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather Dashboard</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="refresh" content="60">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-md navbar-default fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../index.html">Weather and Latitude</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+                    <span class="caret"></span>
+                </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="visuals/latVtemp.html">Max Temperature </a></li>
+                        <li><a href="visuals/latVhumidity.html">Humidity </a></li>
+                        <li><a href="visuals/latVcloudiness.html">Cloudiness </a></li>
+                        <li><a href="visuals/latVwindspeed.html">Wind Speed </a></li>
+
+                    </ul>
+                </li>
+                <li><a href="comparison.html">Comparison </a></li>
+                <li><a href="data.html">Data </a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container bg-3 text-center">
+        <h1>Comparison: Latitude v. X</h1>
+        <p> Click any plot to see an in-depth analysis.</p>
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="compare-title"><a href="visuals/latVtemp.html"> vs. Max Temperature </a></p>
+                <img class="img-thumbnail" src="https://github.com/Serruhb/WeatherAPI/blob/master/images/LatVsTemp.png?raw=true" alt="Max Temp">
+            </div>
+            <div class="col-lg-6">
+                <p class="compare-title">
+                    <a href="visuals/latVhumidity.html"></a> vs. Humidity </a>
+                </p>
+                <img class="img-thumbnail" src="https://github.com/Serruhb/WeatherAPI/blob/master/images/LatVsHumidity.png?raw=true" alt="Humidity">
+            </div>
+        </div>
+
+        <div class="compare">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="compare-title"><a href="visuals/latVcloudiness.html"> vs. Cloudiness </a></p>
+                    <img class="img-thumbnail" src="https://github.com/Serruhb/WeatherAPI/blob/master/images/LatVsCloudiness.png?raw=true" alt="Cloudiness ">
+                </div>
+                <div class="col-lg-6 ">
+                    <p class="compare-title "><a href="visuals/latVwindspeed.html"> vs. Wind Speed </a></p>
+                    <img class="img-thumbnail " src="https://github.com/Serruhb/WeatherAPI/blob/master/images/LatVsWindSpeed.png?raw=true" alt="Wind ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container text-center ">
+        <p> 2019 Data Analysis and Visualization Bootcamp</p>
+    </footer>
+
+</body>
+
+</html>

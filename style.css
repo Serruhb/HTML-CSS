@@ -1,0 +1,22 @@
+.container-fluid {
+    background-color: gainsboro;
+    border-radius: 10px
+}
+
+.navbar-nav li {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.container {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.jumbotron {
+    margin-top: 60px;
+}
